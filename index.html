@@ -11,27 +11,28 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="menu">
-        <div class="container">
-            <div class="logo"><h1>Miao</h1></div>
-            <div class="menu">
-                <ul class="menu-nav">
-                    <li><a href="">候選人主張</a></li>
-                    <li><a href="">最新活動</a></li>
-                    <li><a href="">政策議題</a></li>
-                    <li><a href="">小額捐款</a></li>
-                    <li><a href="">服務信箱</a></li>
-                </ul>
-                <ul class="menu-social">
-                    <li><a href=""><img src="img/ic_fixed_btn_54_facebook.png" alt=""></a></li>
-                    <li><a href=""><img src="img/ic_fixed_btn_54_instagram.png" alt=""></a></li>
-                    <li><a href=""><img src="img/ic_fixed_btn_54_youtube.png" alt=""></a></li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
+    
     <div class="banner">
+        <div class="header-menu">
+            <div class="content">
+                <div class="logo"><h1>Miao</h1></div>
+                <div class="menu">
+                    <ul class="menu-nav">
+                        <li><a href="">候選人主張</a></li>
+                        <li><a href="">最新活動</a></li>
+                        <li><a href="">政策議題</a></li>
+                        <li><a href="">小額捐款</a></li>
+                        <li><a href="">服務信箱</a></li>
+                    </ul>
+                    <ul class="menu-social">
+                        <li><a href=""><img src="img/ic_fixed_btn_54_facebook.png" alt=""></a></li>
+                        <li><a href=""><img src="img/ic_fixed_btn_54_instagram.png" alt=""></a></li>
+                        <li><a href=""><img src="img/ic_fixed_btn_54_youtube.png" alt=""></a></li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
         <div class="container">
             <div class="text">
                 <div class="slogan">
@@ -217,7 +218,7 @@
                     <h4 class="subtitle">目前小額贊助總金額：NT$ 655,873</h4>
                     <div class="input">
                         <p class="sign">NT$</p>
-                        <input type="number" class="money">
+                        <input type="number" class="money" value="10000">
                     </div>
                     
                     <input type="button" value="馬上支付！">
@@ -235,9 +236,28 @@
             </div>
             <div class="content">
                 <div class="form">
+                    <div class="info">
+                        <div class="input">
+                            <label for="name">您的姓名</label>
+                        <input type="text" name="name" id="name" placeholder="王大喵"> 
+                        </div>
+                        <div class="input">
+                            <label for="mail">您的Email</label>
+                            <input type="email" name="mail" id="mail" placeholder="123@mmaio.com">
+                        </div>
+                        <div class="input">
+                            <label for="phone">您的手機</label>
+                            <input type="text" name="phone" id="phone" placeholder="0912345678">
+                        </div>
 
+                    </div>
+                    <div class="comment">
+                        <label for="comment">您的建言</label>
+                        <textarea placeholder="我想和喵喵說..." class="comment-text" name="comment" id="comment" cols="30" rows="5"></textarea>
+                    </div>
+                    
                 </div>
-                <input type="submit" value="送出">
+                <input class="send-comment" type="submit" value="送出">
                 <p>為了喵喵站出來！</p>
             </div>
         </div>
